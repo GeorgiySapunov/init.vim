@@ -1,5 +1,8 @@
 call plug#begin(stdpath('data'))
 
+"Plug 'sheerun/vim-polyglot'
+"Plug 'vim-syntastic/syntastic'
+
 Plug 'ambv/black'
 
 " telescope requirements...
@@ -14,17 +17,24 @@ Plug 'nvim-treesitter/playground'
 
 Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
+Plug 'preservim/nerdcommenter'
+Plug 'mbbill/undotree'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'chrisbra/Colorizer'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rafi/awesome-vim-colorschemes'
-Plug 'preservim/nerdcommenter'
-Plug 'mbbill/undotree'
-Plug 'lervag/vimtex'
+
 Plug 'rlue/vim-barbaric'
-Plug 'dhruvasagar/vim-table-mode'
+
+Plug 'lervag/vimtex'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+" git
 Plug 'tpope/vim-fugitive'
-Plug 'chrisbra/Colorizer'
+
+"Plug 'sheerun/vim-polyglot'
 
 " lspconfig and completion
 Plug 'neovim/nvim-lspconfig'
@@ -41,7 +51,7 @@ source $HOME/.config/nvim/settings/remaps.vim
 source $HOME/.config/nvim/settings/airline.vim
 source $HOME/.config/nvim/settings/completion.vim
 source $HOME/.config/nvim/settings/def.vim
-source $HOME/.config/nvim/settings/lspconfig.vim
+source $HOME/.config/nvim/settings/lsp.vim
 source $HOME/.config/nvim/settings/sets.vim
 source $HOME/.config/nvim/settings/vimtex.vim
 source $HOME/.config/nvim/settings/telescope.vim
