@@ -1,8 +1,5 @@
 call plug#begin(stdpath('data'))
 
-"Plug 'sheerun/vim-polyglot'
-"Plug 'vim-syntastic/syntastic'
-
 Plug 'ambv/black'
 
 " telescope requirements...
@@ -44,19 +41,20 @@ call plug#end()
 
 filetype plugin on
 
+colorscheme nord
+
 let mapleader = " "
 let maplocalleader = "\\"
 
+source $HOME/.config/nvim/settings/sets.vim
 source $HOME/.config/nvim/settings/remaps.vim
 source $HOME/.config/nvim/settings/airline.vim
 source $HOME/.config/nvim/settings/completion.vim
 source $HOME/.config/nvim/settings/def.vim
 source $HOME/.config/nvim/settings/lsp.vim
-source $HOME/.config/nvim/settings/sets.vim
 source $HOME/.config/nvim/settings/vimtex.vim
 source $HOME/.config/nvim/settings/telescope.vim
 
 " The IME to invoke for managing input languages (macos, fcitx, ibus, xkb-switch)
 let g:barbaric_ime = 'fcitx'
 
-colorscheme nord
