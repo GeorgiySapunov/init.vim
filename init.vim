@@ -57,4 +57,3 @@ source $HOME/.config/nvim/settings/telescope.vim
 
 " The IME to invoke for managing input languages (macos, fcitx, ibus, xkb-switch)
 let g:barbaric_ime = 'fcitx'
-
