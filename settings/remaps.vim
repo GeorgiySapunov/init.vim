@@ -33,10 +33,10 @@ fun! ToggleQFList(global)
 endfun
 
 " split navigations
-nnoremap <M-J> <C-W><C-J>
-nnoremap <M-K> <C-W><C-K>
-nnoremap <M-L> <C-W><C-L>
-nnoremap <M-H> <C-W><C-H>
+nnoremap <M-j> <C-W><C-J>
+nnoremap <M-k> <C-W><C-K>
+nnoremap <M-l> <C-W><C-L>
+nnoremap <M-h> <C-W><C-H>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :Sex!<CR>
 nnoremap <Leader>+ :vertical resize +5<CR>
