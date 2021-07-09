@@ -1,6 +1,7 @@
 lua << EOF
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.texlab.setup{}
+require'lspconfig'.r_language_server.setup{}
 
 local nvim_lsp = require('lspconfig')
 local on_attach = function(client, bufnr)
@@ -58,3 +59,8 @@ for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
 EOF
+
+" R
+let g:LanguageClient_serverCommands = {
+    \ 'r': ['R', '--slave', '-e', 'languageserver::run()'],
+    \ }

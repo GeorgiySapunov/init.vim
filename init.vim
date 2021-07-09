@@ -37,6 +37,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 
+" R
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+
 call plug#end()
 
 filetype plugin on

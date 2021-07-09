@@ -34,6 +34,7 @@ set hlsearch "highlights matching searches
 set foldmethod=indent
 set foldlevel=99
 
+" set nowrap
 set relativenumber
 set nohlsearch
 set hidden
